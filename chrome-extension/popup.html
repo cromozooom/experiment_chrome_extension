@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortcut Manager</title>
+    <link rel="stylesheet" href="popup.css" />
+    <!-- <script src="alpine.min.js" defer></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.0.0/dist/cdn.min.js"
+      defer
+    ></script>
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <div x-data="shortcutManager()">
+      <h1>Shortcut Manager</h1>
+      <div>
+        <input
+          x-model="newShortcut"
+          type="text"
+          placeholder="Enter new shortcut"
+        />
+        <button @click="addShortcut">Add Shortcut</button>
+      </div>
+      <ul>
+        <template x-for="shortcut in shortcuts" :key="shortcut">
+          <li>
+            <span x-text="shortcut"></span>
+            <button @click="removeShortcut(shortcut)">Remove</button>
+          </li>
+        </template>
+      </ul>
+    </div>
+  </body>
+</html>

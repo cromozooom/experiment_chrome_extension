@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Shortcut Manager",
+    "version": "1.0",
+    "description": "A Chrome extension to manage shortcuts using AlpineJS.",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.jpg",
+            "48": "images/icon16.jpg",
+            "128": "images/icon16.jpg"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "images/icon16.jpg",
+        "48": "images/icon16.jpg",
+        "128": "images/icon16.jpg"
+    }
+}

@@ -1,0 +1,24 @@
+[
+    {
+        "title": "WDX Dasboards",
+        "environment": "localhost",
+        "aka": "local",
+        "link": "http://localhost:54800/#/dashboards/",
+        "tag": [
+            "wdx",
+            "localhost",
+            "dashboards"
+        ]
+    },
+    {
+        "title": "WDX Administration",
+        "environment": "webdevelopment",
+        "aka": "webdev",
+        "link": "https://webdevelopment.wdx-dev.net/Portal/#/administration",
+        "tag": [
+            "wdx",
+            "localhost",
+            "dashboards"
+        ]
+    }
+]
